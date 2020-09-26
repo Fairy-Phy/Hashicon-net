@@ -1,5 +1,7 @@
 # Hashicon-net
 
+[![Apache 2.0 License](https://img.shields.io/badge/License-Apache%202.0-red.svg)](https://github.com/Fairy-Phy/Hashicon-net/blob/master/LICENSE)
+
 Hashicon-net is a .NET port of [Hashicon](https://github.com/emeraldpay/hashicon). Generates a beautiful representation of any hash.
 
 ## Usage
@@ -87,3 +89,7 @@ string Base64Text = Hashicon.GenerateAsBase64(Hash, Param);
 ```
 
 ## License
+
+Apache License 2.0
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FFairy-Phy%2FHashicon-net.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FFairy-Phy%2FHashicon-net?ref=badge_large)

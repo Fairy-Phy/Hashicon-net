@@ -6,7 +6,7 @@ image:
 
 environment:
   Codecov_Token:
-    secure: BO0sdRpYxw4dTKVnhXbaiY1VCLxIgdDM4mlQBgVhr0+z4QtYgMfK8O3o+YSKNP8+
+    secure: 4mR2JJpg4jer0+mhpQqDMnJ+QejHqin4LQAxnIxF5FKtrFj2SDMNNefYhySt0Saj
 
 before_build:
   - nuget restore
