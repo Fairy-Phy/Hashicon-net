@@ -4,10 +4,6 @@ image:
   - Ubuntu2004
   - macOS
 
-environment:
-  Codecov_Token:
-    secure: 4mR2JJpg4jer0+mhpQqDMnJ+QejHqin4LQAxnIxF5FKtrFj2SDMNNefYhySt0Saj
-
 before_build:
   - nuget restore
 
@@ -18,4 +14,12 @@ build:
 test_script:
   - dotnet test /p:AltCover=true /p:AltCoverXmlreport="../Coverage_Result.xml" /p:AltCoverAssemblyFilter="XUnit" /p:AltCoverAssemblyFilter="^(?!(Hashicon)).*$" /p:AltCoverAssemblyExcludeFilter="Hashicon.Test"
   - ps: if (!($isLinux)) {Exit-AppveyorBuild}
-  - sh: if grep -Fxq 20.04 /etc/issue; then bash <(curl -s https://codecov.io/bash) -t $Codecov_Token -f ./Coverage_Result.xml; fi
+  - sh: if [ $(grep -c 20.04 /etc/issue) -eq 1 ]; then bash <(curl -s https://codecov.io/bash) -t $Codecov_Token -f ./Coverage_Result.xml; fi
+
+on_success:
+  - ps: Invoke-RestMethod https://raw.githubusercontent.com/DiscordHooks/appveyor-discord-webhook/master/send.ps1 -o send.ps1
+  - ps: ./send.ps1 success $env:Discord_Webhook
+
+on_failure:
+  - ps: Invoke-RestMethod https://raw.githubusercontent.com/DiscordHooks/appveyor-discord-webhook/master/send.ps1 -o send.ps1
+  - ps: ./send.ps1 failure $env:Discord_Webhook
