@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hashicon", "Hashicon\Hashicon.csproj", "{418E3F1C-C671-4AE7-83E7-15F484B6B356}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hashicon.Test", "Hashicon.Test\Hashicon.Test.csproj", "{AE726AEB-E6DE-48FF-81EA-2AAAE22E2D77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{418E3F1C-C671-4AE7-83E7-15F484B6B356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{418E3F1C-C671-4AE7-83E7-15F484B6B356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{418E3F1C-C671-4AE7-83E7-15F484B6B356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{418E3F1C-C671-4AE7-83E7-15F484B6B356}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE726AEB-E6DE-48FF-81EA-2AAAE22E2D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE726AEB-E6DE-48FF-81EA-2AAAE22E2D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE726AEB-E6DE-48FF-81EA-2AAAE22E2D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE726AEB-E6DE-48FF-81EA-2AAAE22E2D77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {035497C4-AEB5-4112-95DE-08383409F481}
+	EndGlobalSection
+EndGlobal
