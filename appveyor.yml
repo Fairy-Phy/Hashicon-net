@@ -17,11 +17,5 @@ build:
 
 test_script:
   - dotnet test /p:AltCover=true /p:AltCoverXmlreport="../Coverage_Result.xml" /p:AltCoverAssemblyFilter="XUnit" /p:AltCoverAssemblyFilter="^(?!(Hashicon)).*$" /p:AltCoverAssemblyExcludeFilter="Hashicon.Test"
-  - ps: |-
-    if (!($isLinux)) {
-      Exit-AppveyorBuild
-    }
-  - sh: |-
-    if grep -Fxq 20.04 /etc/issue; then
-      bash <(curl -s https://codecov.io/bash) -t $Codecov_Token -f ./Coverage_Result.xml
-    fi
+  - ps: if (!($isLinux)) {Exit-AppveyorBuild}
+  - sh: if grep -Fxq 20.04 /etc/issue; then bash <(curl -s https://codecov.io/bash) -t $Codecov_Token -f ./Coverage_Result.xml; fi
