@@ -20,8 +20,7 @@ test_script:
   - ps: |
     if ($APPVEYOR_BUILD_WORKER_IMAGE -eq "Ubuntu2004") {
       Write-Output "Continue..."
-    }
-    else {
+    } else {
       Exit-AppveyorBuild
     }
   - ls -l
