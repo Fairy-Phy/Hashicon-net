@@ -1,8 +1,9 @@
 # Hashicon-net
 
 [![Build status](https://ci.appveyor.com/api/projects/status/6grdvi214aah3oap?svg=true)](https://ci.appveyor.com/project/Fairy-Phy/hashicon-net)
-[![codecov](https://codecov.io/gh/Fairy-Phy/Hashicon-net/branch/master/graph/badge.svg?token=0W2Z2QLBT7)](undefined)
+[![codecov](https://codecov.io/gh/Fairy-Phy/Hashicon-net/branch/master/graph/badge.svg)](https://codecov.io/gh/Fairy-Phy/Hashicon-net)
 [![Apache 2.0 License](https://img.shields.io/badge/License-Apache%202.0-red.svg)](https://github.com/Fairy-Phy/Hashicon-net/blob/master/LICENSE)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FFairy-Phy%2FHashicon-net.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FFairy-Phy%2FHashicon-net?ref=badge_shield)
 
 Hashicon-net is a .NET port of [Hashicon](https://github.com/emeraldpay/hashicon). Generates a beautiful representation of any hash.
 
@@ -95,3 +96,5 @@ string Base64Text = Hashicon.GenerateAsBase64(Hash, Param);
 Hashicon-net is licensed under the Apache License 2.0. Please see the licence file for more information.
 
 -> https://github.com/Fairy-Phy/Hashicon-net/blob/master/LICENSE
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FFairy-Phy%2FHashicon-net.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FFairy-Phy%2FHashicon-net?ref=badge_large)
